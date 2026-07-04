@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="40" fill="#071029"/>
+  <g fill="#7c3aed" opacity="0.15"><rect x="40" y="80" width="200" height="120" rx="12"/></g>
+  <g fill="#06b6d4" opacity="0.12"><circle cx="620" cy="180" r="80"/></g>
+  <text x="80" y="320" fill="#cfeefa" font-size="36">Modern UI • Fast • Accessible</text>
+</svg>

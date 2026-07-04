@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WebNova — Modern Landing</title>
+    <link rel="icon" href="/static/img/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <link href="/static/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <img src="/static/img/logo.svg" alt="WebNova logo" class="logo">
+          <span>WebNova</span>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+          <ul class="nav-list">
+            <li><a href="/features">Features</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Build fast, beautiful and accessible websites</h1>
+            <p class="lead">A modern responsive template with subtle animations, clear hierarchy, and performance-first approach.</p>
+            <div class="cta-row">
+              <a class="btn primary" href="#features">Get Started</a>
+              <a class="btn ghost" href="#about">Learn More</a>
+            </div>
+            <div class="trust">
+              <span>Trusted by</span>
+              <div class="logos">ACME • NovaCorp • Stellar</div>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="/static/img/hero.svg" alt="Illustration">
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features container">
+        <h2>Features</h2>
+        <div class="grid features-grid">
+          <article class="card">
+            <h3>Responsive by design</h3>
+            <p>Layouts that look great on any device with a mobile-first mindset.</p>
+          </article>
+          <article class="card">
+            <h3>Performance focused</h3>
+            <p>Minimal CSS and JS for fast loading and smooth interaction.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible</h3>
+            <p>Semantic HTML and keyboard-friendly navigation out of the box.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="testimonials" class="container testimonials">
+        <h2>What people say</h2>
+        <div class="grid">
+          <blockquote class="quote">“WebNova helped us launch in days, not weeks.”<cite>— Alex, Founder</cite></blockquote>
+          <blockquote class="quote">“Fast, reliable and beautiful.”<cite>— Priya, Product</cite></blockquote>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <div class="form-row">
+            <input name="name" placeholder="Your name" required>
+            <input name="email" type="email" placeholder="Email" required>
+          </div>
+          <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+          <div id="formResult" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 WebNova — Crafted with care.</div>
+    </footer>
+
+    <script src="/static/js/analytics.js" defer></script>
+    <script src="/static/js/main.js" defer></script>
+    <script>
+      if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
+    </script>
+  </body>
+</html>
